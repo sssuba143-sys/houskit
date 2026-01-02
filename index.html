@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css">
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-thin-straight/css/uicons-thin-straight.css">
+</head>
+
+<body>
+    <header>
+        <div class="grid grid grid-cols-1 lg:grid-cols-3   flex items-center  mx-auto shadow-lg gap-4">
+            <div
+                class="text-2xl font-bold text-black-500  mx-auto p-2 text-center text-left  border-black-400 border border-2 border border-2">
+                HOUSKIT</div>
+            <div class="hidden lg:flex  my-10 md:p-6 lg:p-6 bg-white  items-center justify-between space-y-2">
+                <div class=" text-m text-orange-500 transition-transform hover:scale-110"><span>HOME</span></div>
+                <div
+                    class="text-m text-black-500 hover:text-orange-500 duration-100 transition-transform hover:scale-110">
+                    <span>SHOP</span></div>
+                <div
+                    class="text-m text-black-500 hover:text-orange-500 duration-100 transition-transform hover:scale-110">
+                    <span>PROMOTIONS</span></div>
+                <div
+                    class="text-m text-black-500 hover:text-orange-500 duration-100 transition-transform hover:scale-110">
+                    <span>BLOG</span></div>
+                <div
+                    class="text-m text-black-500 hover:text-orange-500 duration-100 transition-transform hover:scale-110">
+                    <span>PAGES</span></div>
+                <div
+                    class="text-m text-black-500 hover:text-orange-500 duration-100 transition-transform hover:scale-110">
+                    <span>VENDOR</span></div>
+
+            </div>
+
+            <div
+                class="hidden lg:flex w-20 bg-white j mr-100  mx-auto items-center justify-between space-x-3 *:cursor-pointer">
+                <button class="text-l text-black-500 hover:text-orange-500 duration-100"> <i
+                        class="fi fi-br-search "></i> <span>
+                        search </span></button>
+                <button class="text-l text-black-500 mr-50 hover:text-orange-500 duration-100"> <i
+                        class="fi fi-rr-shopping-cart"></i><span>
+                        cart</span></button>
+            </div>
+            <div onclick="menuButton()"
+                class="lg:hidden px-3 px-2 max-w-10 mx-left rounded-xl bg-gray-200 cursor-pointer"><i
+                    class="fi fi-br-bars-sort"></i>
+
+            </div>
+        </div>
+
+
+        </div>
+        <div id="menu" class="absolute hidden lg:hidden w-full space-y-5 p-10 bg-white  *:cursor-pointer">
+            <div class="text-m text-orange-500 hover:text-orange-500">HOME</div>
+            <div class="text-m hover:text-orange-500">SHOP</div>
+            <div class="text-m hover:text-orange-500">PROMOTIONS</div>
+            <div class="text-m hover:text-orange-500">BLOG</div>
+            <div class="text-m hover:text-orange-500">PAGES</div>
+            <div class="text-m hover:text-orange-500">VENDOR</div>
+            <div class="text-m fi fi-rs-search">search</div>
+            <div class="text-m ">cart</div>
+        </div>
+    </header>
+    <main>
+
+
+        <section>
+            <div class="bg-[url('downloads6.jpg')] bg-no-repeat bg-cover min-h-[500px]  flex items-center ">
+                <div class="p-5 lg:py-20 lg:pl-50 text-white space-y-10 max-w-[600px] ">
+                    <h3 class="text-4xl">Creative Design Minimalistic Furnitures </h3>
+                    <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsam corrupti
+                        placeat pariatur itaque iusto quas perferendis rerum.</p>
+                    <button
+                        class="uppercase border-2 border-gray-200 px-5 py-3 rounded-2xl font-bold hover:text-orange-500 hover:bg-white font-semibold duration-500">shop
+                        now</button>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section>
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 max-w-[900px] mx-auto place-items-center flex mx-auto my-30 space-y-6">
+
+                <div class=" border-white-400 text-l text-center transition-transform hover:scale-110 duration-1000">
+                    <h1 class="items-center mx-auto max-w-[100px]"><img src="truck-container (3).png" alt=""></h1>
+                    <button class="font-bold hover:text-orange-500 hover:bg-gray-50">Free Shipping </button>
+                    <div class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+                </div>
+                <div
+                    class="border-white-400 text-l text-center max-w-[200px] transition-transform hover:scale-110  duration-1000">
+                    <h1 class="items-center mx-auto max-w-[100px]"> <img src="coins.png" alt=""></h1>
+                    <button class="font-bold hover:text-orange-500 hover:bg-gray-50">Money Graurentee</button>
+                    <h6 class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing
+                    </h6>
+                </div>
+                <div
+                    class="border-white-400 text-l text-center max-w-[200px] transition-transform hover:scale-110  duration-1000">
+                    <h1 class="items-center mx-auto max-w-[100px]"> <img src="software-development (1).png" alt=""></h1>
+                    <button class="font-bold hover:text-orange-500 hover:bg-gray-50">Online Support</button>
+                    <h6 class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing
+                    </h6>
+                </div>
+            </div>
+        </section>
+        </div>
+        <section>
+            <div
+                class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-3 *:h-80 *:bg-cover *:bg-center gap-5 px-5">
+                <div
+                    class="col-span-1 bg-[url('https://demo1.wpthemego.com/themes/sw_houskit/wp-content/uploads/2019/04/dm1.jpg')] flex justify-center items-center transition-transform hover:scale-110 duration-1000 ">
+                    <div class="h-30 w-30 bg-gray-50 rounded-full flex justify-center items-center text-center">Audio
+                        <br /> & <br /> Speaker
+                    </div>
+                </div>
+                <div
+                    class="lg:col-span-2 bg-[url('https://demo1.wpthemego.com/themes/sw_houskit/wp-content/uploads/2019/04/dm2.jpg')] p-10 transition-transform hover:scale-110 duration-1000">
+                    <div class="text-right space-y-2  ">
+                        <p class="text-2xl font-bold ">Clean & Clear porelain</p>
+                        <p class="text-2xl font-bold ">For Your Kitchen</p>
+                        <p class=""> <span>Price form:</span> <span
+                                class="text-2xl text-yellow-600 font-bold">$39.00</span> </p>
+                        <button
+                            class="py-2 px-4 bg-white hover:bg-black text-black hover:text-white border-2 border-black font-semibold duration-1000 ">
+                            SHOP NOW </button>
+                    </div>
+                </div>
+                <div
+                    class="lg:col-span-2 bg-[url('https://demo1.wpthemego.com/themes/sw_houskit/wp-content/uploads/2019/04/dm3.jpg')] transition-transform hover:scale-110 duration-1000">
+                    <div class="text-right space-y-2 ">
+                        <p class="text-2xl font-bold ">Clean & Clear porelain</p>
+                        <p class="text-2xl font-bold ">For Your Kitchen</p>
+                        <p class=""> <span>Price form:</span> <span
+                                class="text-2xl text-yellow-600 font-bold">$69.00</span> </p>
+                        <button
+                            class="py-2 px-4 bg-white hover:bg-black text-black hover:text-white border-2 border-black font-semibold duration-500 hover:bg-black hover:text-white">
+                            SHOP NOW </button>
+                    </div>
+                </div>
+                <div
+                    class="col-span-1  bg-[url('https://demo1.wpthemego.com/themes/sw_houskit/wp-content/uploads/2019/04/dm4.jpg')] flex justify-center items-center transition-transform hover:scale-110 duration-500">
+                    <div class="h-30 w-30 bg-gray-50 rounded-full flex justify-center items-center text-center">Audio
+                        <br /> & <br /> Speaker
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <section>
+                <div class="max-w-[700px] items-center max-w-[1000px] mt-30 mb-15 mx-auto  mt-3 px-5">
+                    <div class="items-center text-3xl font-bold  text-center mx-auto">NEW ARRIVALS</div>
+                    <div class="items-center text-xl text-center mx-auto">Lorem ipsum dolor sit amet consectetur
+                        adipisicing
+                        elit. Fuga ipsam corrupti
+                        placeat pariatur itaque iusto quas perferendis rerum. </div>
+                </div>
+            </section>
+            <section>
+                <div
+                    class="max-w-[1200px] w-full mx-auto grid place-items-center gap-5 md:grid-cols-2 lg:grid-cols-4 px-5">
+                    <div class="transition-transform hover:scale-110 duration-500">
+                        <img src="doo.jpg" alt="" class="">
+                        <h3 class="hover:text-orange-500 ">1.bag super bags</h3>
+                        <h3 class="text-xl font-bold">$70.00</h3>
+                    </div>
+                    <div class="transition-transform hover:scale-110 duration-500">
+                        <img src="doo1.jpg" alt="" class="">
+                        <h3 class="hover:text-orange-500">2.bag super bags</h3>
+                        <h3 class="text-xl font-bold">$70.00</h3>
+                    </div>
+                    <div class="transition-transform hover:scale-110 duration-500">
+                        <img src="doo2.jpg" alt="" class="">
+                        <h3 class="hover:text-orange-500">3.soba super soba</h3>
+                        <h3 class="text-xl font-bold">$55.00</h3>
+                    </div>
+                    <div class="transition-transform hover:scale-110 duration-500">
+                        <img src="doo3.jpg" alt="" class="">
+                        <h3 class="hover:text-orange-500">4.nishi ult aligue</h3>
+                        <h3 class="text-xl font-bold">$60.00-70.00</h3>
+                    </div>
+                </div>
+
+            </section>
+
+            <section>
+                <div class="max-w-[700px] items-center max-w-[1000px] mx-auto mt-30 mb-15 px-5">
+                    <div class="items-center text-3xl font-bold  text-center mx-auto">FEATURED PRODUCTS</div>
+                    <div class="items-center text-xl text-center mx-auto">Lorem ipsum dolor sit amet consectetur
+                        adipisicing
+                        elit. Fuga ipsam corrupti
+                        placeat pariatur itaque iusto quas perferendis rerum. </div>
+                </div>
+            </section>
+            <section>
+                <div
+                    class="max-w-[1200px] w-full mx-auto grid place-items-center gap-5 md:grid-cols-2 lg:grid-cols-4 px-5">
+                    <div class="transition-transform hover:scale-110 duration-500">
+                        <img src="di.jpg" alt="" class="">
+                        <h3 class="hover:text-orange-500">1.nisi ate alegue</h3>
+                        <h3 class="text-xl font-bold">₹60.00-70.00</h3>
+                    </div>
+                    <div class="transition-transform hover:scale-110 duration-500">
+                        <img src="di1.jpg" alt="" class="">
+                        <h3 class="hover:text-orange-500">1.nisi ate alegue</h3>
+                        <h3 class="text-xl font-bold">$59.00</h3>
+                    </div>
+                    <div class="transition-transform hover:scale-110 duration-500">
+                        <img src="d2.jpg" alt="" class="">
+                        <h3 class="hover:text-orange-500">1.nisi ate alegue</h3>
+                        <h3 class="text-xl font-bold">$68.00</h3>
+                    </div>
+                    <div class="transition-transform hover:scale-110 duration-500">
+                        <img src="d3.jpg" alt="" class="">
+                        <h3 class="hover:text-orange-500">1.nisi ate alegue</h3>
+                        <h3 class="text-xl font-bold">$65.00</h3>
+                    </div>
+                </div>
+                <section>
+                    <div class="my-28 px-4">
+
+                        <div
+                            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-8 max-w-[1200px] mx-auto place-items-center">
+                            <div
+                                class="h-24 w-24 bg-[url('icon.png')] bg-contain bg-center bg-no-repeat transition-transform hover:scale-110 duration-500">
+                            </div>
+                            <div
+                                class="h-24 w-24 bg-[url('icon1.png')] bg-contain bg-center bg-no-repeat transition-transform hover:scale-110 duration-500">
+                            </div>
+                            <div
+                                class="h-24 w-24 bg-[url('icon2.png')] bg-contain bg-center bg-no-repeat transition-transform hover:scale-110 duration-500">
+                            </div>
+                            <div
+                                class="h-24 w-24 bg-[url('icon3.png')] bg-contain bg-center bg-no-repeat transition-transform hover:scale-110 duration-500">
+                            </div>
+                            <div
+                                class="h-24 w-24 bg-[url('icon4.png')] bg-contain bg-center bg-no-repeat transition-transform hover:scale-110 duration-500">
+                            </div>
+                            <div
+                                class="h-24 w-24 bg-[url('icon5.png')] bg-contain bg-center bg-no-repeat transition-transform hover:scale-110 duration-500">
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section>
+                    <div class="max-w-[700px] items-center max-w-[1000px] mx-auto  mt-35 my-10 space-y-2 mx-50 px-5">
+                        <div class="items-center text-3xl font-bold  text-center mx-auto">LATEST BLOG</div>
+                        <div class="items-center text-xl text-center mx-auto">Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Fuga ipsam corrupti
+                            placeat pariatur itaque iusto quas perferendis rerum. </div>
+                    </div>
+                </section>
+                <section class="py-12 px-4 sm:px-8 md:py-20">
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 max-w-[1200px] mx-auto">
+
+
+                        <div
+                            class="flex flex-col h-full bg-white shadow-sm rounded-xl overflow-hidden border border-gray-100">
+                            <div
+                                class="space-y-4 p-6 mb-4 flex-grow  transition-transform hover:scale-110 duration-1000">
+                                <img src="BED.jpg" alt="Luxury Room" class="w-full h-56 object-cover rounded-lg">
+                                <p class="text-sm text-gray-500 uppercase font-medium">October 16, 2016</p>
+                                <h2 class="text-xl font-bold text-gray-900 leading-snug">Ullambco laboris nishi room
+                                </h2>
+                                <p class="text-gray-600 line-clamp-3 text-sm md:text-base">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsam corrupti placeat
+                                    pariatur itaque iusto quas perferendis rerum.
+                                </p>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <button
+                                    class="w-full sm:w-auto uppercase border-2 border-gray-200 px-6 py-3 rounded-2xl hover:bg-black hover:text-white font-semibold transition-all duration-300">
+                                    Read more
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div
+                            class="flex flex-col h-full bg-white shadow-sm rounded-xl overflow-hidden border border-gray-100 ">
+                            <div
+                                class="space-y-4 p-6 mb-4 flex-grow transition-transform hover:scale-110 duration-1000">
+                                <img src="BED1.jpg" alt="Interior Detail" class="w-full h-56 object-cover rounded-lg">
+                                <p class="text-sm text-gray-500 uppercase font-medium">October 16, 2016</p>
+                                <h2 class="text-xl font-bold text-gray-900 leading-snug">Ut labore et dolare magna</h2>
+                                <p class="text-gray-600 line-clamp-3 text-sm md:text-base">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsam corrupti placeat
+                                    pariatur itaque iusto quas perferendis rerum.
+                                </p>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <button
+                                    class="w-full sm:w-auto uppercase border-2 border-gray-200 px-6 py-3 rounded-2xl hover:bg-black hover:text-white font-semibold transition-all duration-300">
+                                    Read more
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div
+                            class="flex flex-col h-full bg-white shadow-sm rounded-xl overflow-hidden border border-gray-100">
+                            <div
+                                class="space-y-4 p-6 mb-4 flex-grow transition-transform hover:scale-110 duration-1000">
+                                <img src="BED2.jpg" alt="Room View" class="w-full h-56 object-cover rounded-lg">
+                                <p class="text-sm text-gray-500 uppercase font-medium">October 16, 2016</p>
+                                <h2 class="text-xl font-bold text-gray-900 leading-snug">Eiusmod tempor incident ut</h2>
+                                <p class="text-gray-600 line-clamp-3 text-sm md:text-base">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsam corrupti placeat
+                                    pariatur itaque iusto quas perferendis rerum.
+                                </p>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <button
+                                    class="w-full sm:w-auto uppercase border-2 border-gray-200 px-6 py-3 rounded-2xl hover:bg-black hover:text-white font-semibold transition-all duration-300">
+                                    Read more
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <footer>
+                    <section>
+                        <div class="mx-auto  bg-black">
+
+                            <div
+                                class="gap-10 grid place-items-center md:grid-cols-1 lg:grid-cols-2 max-w-[1200px] mx-auto px-5">
+
+                                <div class="text-gray-50 mt-30 space-y-7 ">
+                                    <h2 class="text-2xl font-bold">ABOUT STORE</h2>
+                                    <h3> <i class="fi fi-ss-home"></i> Ranelagh Place, Liverpool, L3 5UL, England</h3>
+                                    <h3> <i class="fi fi-sr-phone-call"></i> 8 (495) 989—20—11</h3>
+                                    <h3><i class="fi fi-bs-envelope"></i> contact@wpthemego.com</h3>
+
+                                    <div class="">
+                                        <h1><i class=""></i></h1>
+                                        <h1><i class="fi fi-brands-twitter-alt-square"></i></h1>
+                                        <h1><i class="fi fi-ss-parking-circle"></i></h1>
+                                        <h1><i class="fi fi-brands-instagram-circle"></i></h1>
+                                        <h1><i class="fi fi-brands-google-square"></i></h1>
+                                    </div>
+                                </div>
+
+                                <div class="text-gray-50 flex space-x-8 mt-30 ">
+                                    <div class="space-y-8">
+                                        <h1 class="text-2xl font-bold">INFORMATION</h1>
+                                        <h1>Shipping guide</h1>
+                                        <h1 class="">Store location</h1>
+                                        <h1 class="">Afiliates</h1>
+                                        <h1 class="">Customer point policy</h1>
+                                        <h1 class="">Customer point policy</h1>
+                                    </div>
+                                    <div class="space-y-8">
+                                        <h1 class="text-2xl font-bold">CUSTOMER SERVICES</h1>
+                                        <h1 class="">Product Support</h1>
+                                        <h1 class="">PC Setup & Support</h1>
+                                        <h1 class="">Services</h1>
+                                        <h1 class="">Extended Service Plans</h1>
+                                        <h1 class="">Community</h1>
+                                    </div>
+                                </div>
+
+
+                                <div class="text-gray-50">
+                                    <h1 class="uppercase">Sign up for our exclusive Newsletter</h1>
+                                </div>
+                                <div
+                                    class="text-gray-50 border-gray-50 uppercase border border-gray-200 px-5 py-3 rounded-2xl">
+                                    email
+                                    <input type="email">
+                                    <button
+                                        class="text-gray-50 border-2 px-4 hover:text-black rounded-xl text-l hover:bg-white duration-500">Submit</button>
+                                </div>
+
+                                <div>
+                                    <h6 class="text-gray-50"> ©2025 WordPress Theme SW Houskit. All Rights Reserved.
+                                        Designed by WPThemeGo.Com.</h6>
+                                </div>
+                                <div>
+                                    <h1><img src="da.png" alt=""></h1>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </section>
+                </footer>
+                <script>
+                    function menuButton() {
+                        const abc = document.getElementById('menu')
+                        abc.classList.toggle('hidden')
+                    }
+                </script>
+</body>
+
+</html>
